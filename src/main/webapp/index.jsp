@@ -9,7 +9,7 @@
       <li class="list-group-item"><a href="ejemplos/basico3.jsp">Ejemplo Servlet Response Content Type</a></li>
       <li class="list-group-item"><a href="ejemplos/basico4.jsp">GET y POST</a></li>
       <li class="list-group-item"><a href="nombres">Listado de nombres</a></li>
-      <li class="list-group-item"><a href="videos">Youtube</a></li>
+      <li class="list-group-item"><a href="backoffice/videos">Youtube</a></li>
       <li class="list-group-item"><a href="ejemplos/jsp.jsp">JSP</a></li>
       <li class="list-group-item"><a href="jstl">JSTL - Java Server Tag Libraries</a></li>
       <li class="list-group-item"><a href="ejemplos/el.jsp">EL - Expression Language</a></li>
