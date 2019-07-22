@@ -40,7 +40,7 @@
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="videos" target="_blank">Youtube</a>
+          <a class="nav-link" href="backoffice/videos" target="_blank">Youtube</a>
         </li>
         <li class="nav-item active">
 	       	<c:if test="${usuario == null}">
