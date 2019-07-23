@@ -45,18 +45,13 @@ public class UsuariosLogeadosListener implements HttpSessionListener, HttpSessio
 	 * @see HttpSessionAttributeListener#attributeAdded(HttpSessionBindingEvent)
 	 */
 	public void attributeAdded(HttpSessionBindingEvent event) {
-		Boolean encontrado = false;
-		HttpSession session = event.getSession();
-		String nombre = (String) session.getAttribute("usuario");
-		for (int i=0; i < lista.size(); i++) {
-			if (lista.get(i).equals(nombre)) {
-				encontrado = true;
-				break;
-			}
-		}
-		if (!encontrado) {
+
+		if(("usuario").equals(event.getName())) {
+			HttpSession session = event.getSession();
+			String nombre = (String) session.getAttribute("usuario");
 			lista.add(nombre);
-		}
+		}	
+		
 	}
 
 	/**
