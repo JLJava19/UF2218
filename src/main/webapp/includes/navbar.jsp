@@ -24,7 +24,7 @@
             <a class="dropdown-item" href="ejemplos/basico3.jsp">Servlet Response Content Type</a>
             <a class="dropdown-item" href="ejemplos/basico4.jsp">GET y POST</a>
             <a class="dropdown-item" href="nombres">Listado nombres</a>
-            <a class="dropdown-item" href="videos">Youtube</a>
+            <a class="dropdown-item" href="backoffice/videos">Youtube</a>
             <a class="dropdown-item" href="ejemplos/jsp.jsp">JSP</a>
         	<a class="dropdown-item" href="jstl">JSTL - Java Server Tag Libraries</a>
         	<a class="dropdown-item" href="ejemplos/el.jsp">EL - Expression Language</a>
