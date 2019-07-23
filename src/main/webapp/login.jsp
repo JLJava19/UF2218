@@ -1,6 +1,7 @@
 <%@include file="includes/header.jsp"%>
 <%@include file="includes/navbar.jsp"%>
 
+
 <h1>Login</h1>
 
 <form action="login" method="post">
