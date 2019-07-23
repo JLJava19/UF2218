@@ -39,11 +39,10 @@ public class LoginController extends HttpServlet {
 			
 			
 			HttpSession session = request.getSession();
+			// Mejor ponerlo en WEB-INF-> web.xml
 			// session.setMaxInactiveInterval( 60 * 5 ); // 5 min
 			
 			
-			//session.setAttribute("usuario", "usuario"+request.getLocalAddr() );
-			//session.setAttribute("usuario", "usuario" + Math.random() );
 			session.setAttribute("usuario", "usuario"+request.getRemoteAddr() );
 			request.setAttribute("mensaje", new Alert("success","Ongi Etorri " + usuario ) );
 			
