@@ -4,6 +4,8 @@
 
 <h1>Login</h1>
 
+<%@include file="includes/mensaje.jsp"%>
+
 <form action="login" method="post">
 	<div class="form-group">
 		<label for="usuario">usuario</label> <input
