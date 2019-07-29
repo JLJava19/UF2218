@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="resources/vendors/fontawesome-free-5.9.0-web/css/all.min.css">
 
-  <link rel="stylesheet" href="resources/css/styles.css">
+  <link rel="stylesheet" href="resources/css/styles.css?d="<%=System.currentTimeMillis()%>>
   <title>JEE</title>
 </head>
 

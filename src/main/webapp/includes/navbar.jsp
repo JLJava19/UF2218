@@ -108,6 +108,7 @@
 					<a class="dropdown-item" href="backoffice/videos">Youtube</a>
 					<a class="dropdown-item" href="ejemplos/calculadora.jsp">Calculadora</a>
 					<a class="dropdown-item" href="ejemplos/ahorcado.jsp">Ahorcado</a>
+					<a class="dropdown-item" href="i18n">i18n - internalización</a>
 
 					<div class="dropdown-divider"></div>
 					<a class="dropdown-item" href="#">Something else here</a>
