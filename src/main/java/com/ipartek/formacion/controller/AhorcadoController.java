@@ -42,13 +42,13 @@ public class AhorcadoController extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		char letra = (Character) request.getParameter("inputLetra"));
+		String letra = request.getParameter("inputLetra");
 		
 		
 		
 		
-		request.setAttribute("inputNumero2", numero2);
-		request.setAttribute("resultado", resultado);
+		request.setAttribute("inputLetra", letra);
+
 		request.getRequestDispatcher(VIEW_INDEX).forward(request, response);
 		
 		

@@ -73,7 +73,7 @@ public class Ahorcado {
 		int intentos = INTENTOS;
 		//char caract = '_';
 		
-		Alert alerta = new Alert ("warning", "Cuidadd");
+		Alert alerta = new Alert ("warning", "Cuidado");
 		boolean acierto = false;
 		
 		
@@ -84,10 +84,9 @@ public class Ahorcado {
 			caract = Character.toLowerCase(caract);
 			
 			if (comprobrarCaracter(caract)) {
-				System.out.println("Muy bien \n");
-
+				alerta = new Alert("success", "Muy bien");
 			} else {
-				System.out.println("Muy mallllll \n");
+				alerta = new Alert("warning", "Muy mallllll");
 				intentos = intentos - 1;
 			}
 
@@ -99,14 +98,12 @@ public class Ahorcado {
 		
 		
 		if (intentos == 0 && !acierto) {
-			
-			System.out.println("SE ACABO, HAS PERDIDO");
-
+			alerta = new Alert("danger", "SE ACABO, HAS PERDIDO");
 		}else {
-			System.out.println("Felicidades!!!!!");
+			alerta = new Alert("success", "Felicidades!!!!!");
 		}
 		
-		return Alert
+		return alerta;
 	}
 
 //*******************************************************************************
