@@ -74,6 +74,8 @@ public class CalculadoraController extends HttpServlet {
 				}
 			}catch(Exception e) {
 				request.setAttribute("mensaje", new Alert("danger", e.getMessage() ));
+			}finally {
+				request.setAttribute("mensaje", new Alert("success", "Bravo" ));
 			}
 			
 			

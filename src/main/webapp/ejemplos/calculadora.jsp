@@ -1,6 +1,7 @@
 <%@page import="com.ipartek.formacion.controller.CalculadoraController"%>
 <%@include file="../includes/header.jsp"%>
 <%@include file="../includes/navbar.jsp"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
 <h1>Calculadora</h1>
 
@@ -30,11 +31,15 @@
       </select>
     </div>
   </div>
+  
  
   <c:if test="${resultado!=null}">
 	  <div class="form-group row">
 	    <div class="col-sm-12">
-	      <input type="number" readonly class="form-control" id="resultado" name="resultado" value="${resultado}">
+	    	<span>
+	    		<fmt:setLocale value="${user.locale}" />
+ 				<fmt:formatNumber pattern="#,##0.00" value="${resultado}"/>
+	    	</span>
 	    </div>
 	  </div>
   </c:if>
