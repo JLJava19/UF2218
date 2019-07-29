@@ -76,14 +76,15 @@ public class CalculadoraController extends HttpServlet {
 				request.setAttribute("mensaje", new Alert("danger", e.getMessage() ));
 			}finally {
 				request.setAttribute("mensaje", new Alert("success", "Bravo" ));
+				request.setAttribute("inputNumero1", numero1);
+				request.setAttribute("inputNumero2", numero2);
+				request.setAttribute("resultado", resultado);
+				
+				request.setAttribute("op", inputOperacion);
 			}
 			
 			
-			request.setAttribute("inputNumero1", numero1);
-			request.setAttribute("inputNumero2", numero2);
-			request.setAttribute("resultado", resultado);
 			
-			request.setAttribute("op", inputOperacion);
 		}
 		request.getRequestDispatcher(VIEW_INDEX).forward(request, response);
 	}
