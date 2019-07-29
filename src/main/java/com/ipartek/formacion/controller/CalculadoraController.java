@@ -36,13 +36,13 @@ public class CalculadoraController extends HttpServlet {
 		
 		
 		
-		if (!isNumeric(request.getParameter("inputNumero1")) || !isNumeric(request.getParameter("inputNumero2"))) {
+		if (!isNumeric(request.getParameter("inputNumero1").trim().replaceAll(",", ".")) || !isNumeric(request.getParameter("inputNumero2").trim().replaceAll(",", "."))) {
 			request.setAttribute("mensaje", new Alert("danger", "Zorrrooooo" ));
 		}else {
 		
 		
-			float numero1 = Float.parseFloat(request.getParameter("inputNumero1"));
-			float numero2 = Float.parseFloat(request.getParameter("inputNumero2"));
+			float numero1 = Float.parseFloat(request.getParameter("inputNumero1").trim().replaceAll(",", "."));
+			float numero2 = Float.parseFloat(request.getParameter("inputNumero2").trim().replaceAll(",", "."));
 			int inputOperacion = Integer.parseInt(request.getParameter("inputOperacion"));
 			
 			float resultado = 0f;
@@ -91,7 +91,7 @@ public class CalculadoraController extends HttpServlet {
         boolean resultado;
 
         try {
-            Integer.parseInt(cadena);
+            Float.parseFloat(cadena);
             resultado = true;
         } catch (NumberFormatException excepcion) {
             resultado = false;
