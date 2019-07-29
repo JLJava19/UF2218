@@ -2,7 +2,16 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
 <%@page errorPage="error.jsp" %>  
-    
+
+<%
+	//Gestión del idioma
+
+%>
+<c:set var="idiomaSeleccionado" value="${not empty sessionScope.idiomaSeleccionado ? sessionScope.idiomaSeleccionado : 'es_ES'}" scope="session" />
+<fmt:setLocale value="${idiomaSeleccionado}" />
+<fmt:setBundle basename="i18n.i18nmessages" /> 
+
+
 <!DOCTYPE html>
 <html lang="es">
 
