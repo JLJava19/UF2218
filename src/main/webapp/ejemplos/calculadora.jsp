@@ -1,7 +1,7 @@
 <%@page import="com.ipartek.formacion.controller.CalculadoraController"%>
 <%@include file="../includes/header.jsp"%>
 <%@include file="../includes/navbar.jsp"%>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+
 
 <h1>Calculadora</h1>
 
