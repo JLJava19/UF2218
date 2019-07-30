@@ -115,11 +115,11 @@
 
 	<ol class="breadcrumb row-reverse">
 		<li class="breadcrumb-item"><a
-			href="i18n?idiomaSeleccionado=es_ES&ruta=${pageContext.request.requestURI}">Es</a></li>
+			href="i18n?idiomaSeleccionado=es_ES&ruta=${pageContext.request.requestURI}"><img src="resources/img/british.png" alt="" class="${sessionScope.idiomaSeleccionado != 'en_EN' ? 'inactive': ''  }">Es</a></li>
 		<li class="breadcrumb-item"><a
-			href="i18n?idiomaSeleccionado=en_EN&ruta=${pageContext.request.requestURI}">En</a></li>
+			href="i18n?idiomaSeleccionado=en_EN&ruta=${pageContext.request.requestURI}"><img src="resources/img/euskadi.png" alt="" class="${sessionScope.idiomaSeleccionado != 'eu_ES' ? 'inactive': ''  }">En</a></li>
 		<li class="breadcrumb-item active" aria-current="page"><a
-			href="i18n?idiomaSeleccionado=eu_ES&ruta=${pageContext.request.requestURI}">Eu</a></li>
+			href="i18n?idiomaSeleccionado=eu_ES&ruta=${pageContext.request.requestURI}"><img src="resources/img/Spain.png" alt="" class="${sessionScope.idiomaSeleccionado != 'es_ES' ? 'inactive': ''  }">Eu</a></li>
 	</ol>
 
 </nav>

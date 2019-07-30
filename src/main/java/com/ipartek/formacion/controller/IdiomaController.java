@@ -35,8 +35,9 @@ public class IdiomaController extends HttpServlet {
 		String language = idiomaSeleccionado.split("_")[0];
 		String country = idiomaSeleccionado.split("_")[1];
 		String ruta = request.getParameter("ruta");
-		ruta = ruta.split("UF2218/")[1];
-		
+		// TODO No coge bien a ruta la primera vez
+		//ruta = ruta.split("UF2218/")[1];
+		ruta=null;
 		Locale locale = new Locale(language, country);		
 		ResourceBundle properties = ResourceBundle.getBundle ( "i18n/i18nmessages", locale );
 		
@@ -50,7 +51,7 @@ public class IdiomaController extends HttpServlet {
 		if (ruta!=null) {
 			request.getRequestDispatcher(ruta).forward(request, response);
 		}else {
-			request.getRequestDispatcher("index.jsp").forward(request, response);
+			request.getRequestDispatcher("ejemplos/i18n.jsp").forward(request, response);
 		}
 		
 	}
