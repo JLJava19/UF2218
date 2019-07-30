@@ -16,51 +16,30 @@
 * Etiquetas
 ************************************************************************/
 
-footer#main{
-    position: relative;
-    
+
+
+.container-flags {
+	display: flex;
+	justify-content: space-around;
 }
 
-.descuento{
-    position: absolute;
-    margin-left: 4px;
+/*
+.container-flags .img-flag {
+	width: 100px;
+} 
+*/
 
-}
-.boton-arriba{
-    display: none;
-	position: fixed;
-  	bottom:  2em;
-	right: 2em;
-	background-color: white;
-	border-radius: 50%;
-	padding: 2px;
-	z-index: 1000;
-
-	-webkit-box-shadow: 12px 8px 16px -2px rgba(0,0,0,0.74); 
-	box-shadow: 12px 8px 16px -2px rgba(0,0,0,0.74);
-
+img.inactive {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
 
-.tachado{
-    text-decoration: line-through;
+nav img{
+	width: 25px;
+	height: 25px;
 }
 
-.precio{
 
-}
-
-.precioMedio{
-
-}
-
-.descripcion{
-    
-}
-
-.align-items-center {
-    -ms-flex-align: center!important;
-    align-items:baseline!important;
-}
 /* 5. Media Querys para RWD
 ***********************************************************************/
 /* MOBILE L */
@@ -77,14 +56,7 @@ footer#main{
     }
 }
 
-.container-flags {
-	display: flex;
-	justify-content: space-around;
-}
 
-.container-flags .img-flag {
-	width: 100px;
-} 
 
 
 
